@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>용인 이동초 잇다(IT-DA) 북스</title>
+<meta name="description" content="책으로 하나되는 이동(IT-DA): 디지털과 아날로그를 잇는 학교도서관 — 2026 용인 RAS 성장 나눔 페스타 부스">
+<meta property="og:title" content="용인 이동초 잇다(IT-DA) 북스">
+<meta property="og:description" content="디지털과 아날로그를 잇는 학교도서관 · 2026 용인 RAS 성장 나눔 페스타">
+<meta property="og:image" content="img/zep-map.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b2e4f; --blue:#1d6fd6; --sky:#e8f2ff; --green:#2f9e5b; --leaf:#e9f7ee;
+  --amber:#f4a62a; --cream:#fff8ea; --coral:#ef6a4c; --ink:#1c2733; --mute:#5b6b7c; --line:#e3e9f0;
+  --bg:#fbfcfe; --card:#fff;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0e1620;--card:#162331;--ink:#e8eef5;--mute:#9fb0c1;--line:#25364a;--sky:#12263c;--leaf:#112a1d;--cream:#2a2416;--navy:#081a2d}
+}
+*{box-sizing:border-box}
+.grid>*,.split>*{min-width:0}
+html,body{overflow-x:hidden}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;font-family:'Noto Sans KR',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:var(--blue)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:'Jua','Noto Sans KR',sans-serif;font-weight:400;line-height:1.25;margin:0}
+/* nav */
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;align-items:center;height:52px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--ink);font-weight:700;font-size:14px;padding:8px 12px;border-radius:99px}
+nav a:hover{background:var(--sky)}
+nav b{font-family:'Jua';color:var(--blue);margin-right:8px;white-space:nowrap}
+/* hero */
+.hero{background:linear-gradient(135deg,#0b2e4f 0%,#14507f 55%,#1d6fd6 100%);color:#fff;padding:48px 0 56px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-80px;bottom:-80px;width:320px;height:320px;border-radius:50%;background:rgba(244,166,42,.25)}
+.hero .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center;position:relative;z-index:1}
+.tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:4px 14px;font-size:13px;font-weight:500}
+.hero h1{font-size:clamp(34px,6vw,56px);margin:14px 0 10px}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero p.sub{font-size:clamp(16px,2.4vw,20px);margin:0 0 20px;opacity:.95}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:#fff;color:var(--navy);border-radius:12px;padding:6px 12px;font-weight:700;font-size:14px}
+.chips span i{font-style:normal;color:var(--blue)}
+.qrcard{background:#fff;color:var(--ink);border-radius:20px;padding:18px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.25);justify-self:center;max-width:260px;width:100%}
+.qrcard img{width:100%;border-radius:8px}
+.qrcard p{margin:8px 0 0;font-size:14px;font-weight:700;color:var(--navy)}
+.qrcard small{color:var(--mute);font-size:12px}
+/* section */
+section{padding:56px 0}
+.eyebrow{font-weight:900;letter-spacing:.08em;font-size:13px;color:var(--blue);text-transform:uppercase}
+.sec-title{font-size:clamp(26px,4.4vw,38px);margin:6px 0 8px}
+.lead{color:var(--mute);max-width:720px;margin:0 0 28px;font-size:16px}
+.grid{display:grid;gap:16px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.card h3{font-size:21px;margin-bottom:6px}
+.card p{margin:0;color:var(--mute);font-size:15px}
+.pill{display:inline-block;font-weight:900;font-size:12px;padding:3px 10px;border-radius:99px;margin-bottom:10px}
+.p-it{background:var(--sky);color:var(--blue)} .p-da{background:var(--leaf);color:var(--green)} .p-both{background:var(--cream);color:#b86e00}
+.big{font-family:'Jua';font-size:44px;line-height:1;color:var(--blue)}
+.photo{border-radius:14px;overflow:hidden;background:var(--line);position:relative}
+.photo img{width:100%;height:100%;object-fit:cover;cursor:zoom-in}
+.photo figcaption,figure.photo span{position:absolute;left:0;right:0;bottom:0;padding:18px 12px 8px;color:#fff;font-size:12.5px;background:linear-gradient(transparent,rgba(0,0,0,.65))}
+figure{margin:0}
+.ar-16-9{aspect-ratio:16/9}.ar-4-3{aspect-ratio:4/3}.ar-1{aspect-ratio:1}.ar-3-4{aspect-ratio:3/4}
+.alt{background:var(--sky)}
+.alt2{background:var(--cream)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.list{padding:0;margin:12px 0 0;list-style:none}
+.list li{padding-left:24px;position:relative;margin:8px 0;font-size:15.5px}
+.list li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:900}
+.btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;border-radius:99px;padding:11px 20px;margin:6px 8px 0 0}
+.btn.ghost{background:transparent;color:var(--blue);border:2px solid var(--blue)}
+/* tabs */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.tabs button{font:inherit;font-weight:700;border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:8px 16px;cursor:pointer;min-height:44px}
+.tabs button[aria-selected="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.tabs button.star::after{content:" ★";color:var(--amber)}
+.panel{display:none}.panel.on{display:block}
+.panel .box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
+.badge{display:inline-block;background:var(--amber);color:#4a2d00;font-weight:900;font-size:12px;border-radius:8px;padding:2px 8px;margin-left:6px;vertical-align:middle}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px}
+.step{background:var(--sky);border-radius:12px;padding:12px;font-size:14px}
+.step b{display:block;color:var(--blue);font-family:'Jua';font-size:16px}
+.code{background:#0f1b2a;color:#e8f1ff;border-radius:12px;padding:14px;font-size:14px;margin-top:12px}
+.code b{color:var(--amber)}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+/* timeline for growth */
+.event{display:flex;gap:14px;align-items:flex-start}
+.event .ic{flex:0 0 46px;height:46px;border-radius:14px;background:var(--cream);display:grid;place-items:center;font-size:24px}
+.event h3{font-size:18px}
+.mini{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.mini .card{padding:14px;text-align:center}
+.mini .card b{display:block;font-size:15px}
+.mini .card span{font-size:13px;color:var(--mute)}
+.mini .card em{display:block;font-size:30px;font-style:normal}
+.booth{background:linear-gradient(135deg,#fff3d6,#ffe1b8);color:#3a2600;border-radius:24px;padding:28px}
+.booth h3{font-size:28px;margin-bottom:8px}
+.booth .card{background:rgba(255,255,255,.75);border:none;color:#3a2600}
+.booth .card p{color:#5a4423}
+footer{background:var(--navy);color:#cfe0f2;padding:36px 0 56px;text-align:center}
+footer b{color:#fff;font-family:'Jua';font-size:20px}
+footer a{color:#fff}
+footer .dl{margin:14px 0}
+footer .dl a{display:inline-block;border:1px solid rgba(255,255,255,.4);border-radius:99px;padding:6px 14px;margin:4px;text-decoration:none;font-size:14px}
+/* lightbox */
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;place-items:center;z-index:50;padding:16px}
+#lb.on{display:grid}
+#lb img{max-height:92vh;max-width:96vw;border-radius:8px}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+@media (max-width:820px){
+  .hero .wrap,.split{grid-template-columns:1fr}
+  .g3,.g4,.mini{grid-template-columns:1fr 1fr}
+  .g2{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr}
+  .qrcard{max-width:220px}
+  section{padding:40px 0}
+}
+@media (max-width:520px){.g3{grid-template-columns:1fr}.mini{grid-template-columns:1fr 1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav aria-label="바로가기"><div class="wrap">
+  <b>IT-DA 북스</b>
+  <a href="#about">소개</a><a href="#start">① 시작</a><a href="#practice">② 실천</a><a href="#grow">③ 성장</a><a href="#booth">④ 체험</a><a href="#share">공유하기</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <span class="tag">2026 용인 RAS 성장 나눔 페스타 · 부스 No.01</span>
+    <h1>용인 이동초 <em>잇다</em>(IT-DA) 북스</h1>
+    <p class="sub">책으로 하나되는 이동(IT-DA)<br>디지털과 아날로그를 잇는 학교도서관</p>
+    <div class="chips"><span><i>IT</i> 시간과 공간의 연결</span><span><i>DA</i> 학습과 정보의 연결</span><span><i>IT-DA</i> 책으로 하나되는 이동</span></div>
+  </div>
+  <div class="qrcard">
+    <img src="img/qr-site.png" alt="이 사이트로 연결되는 QR 코드" width="240" height="240">
+    <p>📱 스캔하면 이 페이지가 열려요</p>
+    <small>집에 가서도 언제든 다시 볼 수 있어요</small>
+  </div>
+</div></header>
+
+<main>
+<section id="about"><div class="wrap">
+  <div class="eyebrow">ABOUT</div>
+  <h2 class="sec-title">‘잇다’는 세 가지를 잇습니다</h2>
+  <p class="lead">‘언제나 어디나 누구나 잇다(IT-DA) 북스’ — 이동초 학교도서관의 독서 인문교육 브랜드입니다. 읽고(IT), 배우고(DA), 함께 자라는(IT-DA) 한 해의 이야기를 소개해요.</p>
+  <div class="grid g3">
+    <div class="card"><span class="pill p-it">IT</span><h3>시간과 공간의 연결</h3><p>독서로, AI 바이브 코딩, 메타버스 도서관(ZEP) 등 에듀테크로 학교와 가정, 디지털과 아날로그를 잇는 독서 환경을 만듭니다.</p></div>
+    <div class="card"><span class="pill p-da">DA</span><h3>학습과 정보의 연결</h3><p>책과 AI의 교차 검증을 활용한 정보활용수업, 학급별 온책읽기, 바이브 코딩 독후활동으로 배움을 넓힙니다.</p></div>
+    <div class="card"><span class="pill p-both">IT-DA</span><h3>책으로 하나 되는 이동</h3><p>학생·교사·학부모가 함께하는 독서 문화로 평생 독서 습관을 길러요.</p></div>
+  </div>
+  <div class="grid g3" style="margin-top:20px">
+    <a class="card" href="#start" style="text-decoration:none;color:inherit"><div class="big">①</div><h3>시작 · 배움의 출발</h3><p>메타버스 도서관(ZEP)</p></a>
+    <a class="card" href="#practice" style="text-decoration:none;color:inherit"><div class="big">②</div><h3>실천 · 배움의 과정</h3><p>1~6학년 온책읽기 · 정보활용수업</p></a>
+    <a class="card" href="#grow" style="text-decoration:none;color:inherit"><div class="big">③</div><h3>성장 · 배움의 변화</h3><p>북돋움 챌린지 · 손글씨 대회 · 도서부</p></a>
+  </div>
+</div></section>
+
+<!-- 1 시작 -->
+<section id="start" class="alt"><div class="wrap">
+  <div class="eyebrow">① 시작 · 배움의 출발</div>
+  <h2 class="sec-title">시간과 공간을 잇는 메타버스 도서관</h2>
+  <p class="lead">학교 건물 안에만 있던 도서관을 온라인으로 확장했어요. 메타버스 플랫폼 ZEP 속 우리 학교 도서관은 방학에도, 밤에도, 집에서도 열려 있습니다.</p>
+  <div class="split">
+    <figure class="photo ar-16-9"><img src="img/zep-map.jpg" alt="ZEP 메타버스 속 이동초 학교 모습" loading="lazy"><figcaption>ZEP으로 만든 우리 학교 — 학교 안으로 들어가기!</figcaption></figure>
+    <div>
+      <h3 style="font-size:24px">‘한울채 도서관’이 두 개로!</h3>
+      <ul class="list">
+        <li><b>오프라인 한울채 도서관</b> — 직접 방문해 종이책 대출·반납, 조용한 독서</li>
+        <li><b>온라인 메타버스 도서관(ZEP)</b> — 24시간 접속, 스마트폰·태블릿 QR 스캔으로 입장</li>
+        <li><b>오디오북 듣기</b> — 학년별 도서를 소리로 만나요</li>
+        <li><b>온라인 온책읽기 방탈출</b> — 읽은 책을 퀴즈로 풀며 탈출하는 방탈출 게임</li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid g3" style="margin-top:22px">
+    <figure class="photo ar-16-9"><img src="img/zep-1.jpg" alt="컴퓨터실에서 ZEP 메타버스 도서관을 체험하는 수업 모습" loading="lazy"><figcaption>컴퓨터실에서 ZEP 체험 수업</figcaption></figure>
+    <figure class="photo ar-16-9"><img src="img/zep-2.jpg" alt="ZEP 활동 수업 모습" loading="lazy"><figcaption>친구들과 함께 탐험하는 메타버스</figcaption></figure>
+    <figure class="photo ar-16-9"><img src="img/audiobook.jpg" alt="한울채 도서관 오디오북 듣기 페이지" loading="lazy"><figcaption>우리 함께 책 읽을까? 오디오북 듣기</figcaption></figure>
+  </div>
+</div></section>
+
+<!-- 2 실천 -->
+<section id="practice"><div class="wrap">
+  <div class="eyebrow">② 실천 · 배움의 과정</div>
+  <h2 class="sec-title">책과 AI를 함께 읽는 정보활용수업</h2>
+  <p class="lead">모든 학년이 ‘온책읽기’를 10차시씩 운영해 총 150차시를 진행합니다. 책으로 읽고, AI로 확인하고, 직접 만들어 보는 수업이에요. 학년을 눌러 보세요.</p>
+  <div class="grid g3" style="margin-bottom:20px">
+    <div class="card"><div class="big">150</div><h3>총 차시</h3><p>모든 학년 10차시씩 온책읽기 운영</p></div>
+    <div class="card"><div class="big">6</div><h3>학년 모두 참여</h3><p>학년 수준에 맞춘 책과 활동</p></div>
+    <div class="card"><div class="big">AI</div><h3>교차 검증</h3><p>책과 AI의 답을 비교해 보는 힘</p></div>
+  </div>
+
+  <div class="tabs" role="tablist" aria-label="학년별 수업">
+    <button role="tab" aria-selected="false" data-t="g1">1학년</button>
+    <button role="tab" aria-selected="false" data-t="g2">2학년</button>
+    <button role="tab" aria-selected="false" data-t="g3">3학년</button>
+    <button role="tab" aria-selected="false" data-t="g4" class="star">4학년</button>
+    <button role="tab" aria-selected="true" data-t="g5" class="star">5학년</button>
+    <button role="tab" aria-selected="false" data-t="g6">6학년</button>
+  </div>
+
+  <div class="panel" id="g1"><div class="box"><div class="split">
+    <div><h3 style="font-size:26px">1학년 · 『여름 소리』</h3>
+      <p>여름에 들리는 소리를 글자와 그림으로 표현한 그림책을 읽고, 내가 듣는 여름 소리와 모습을 태블릿으로 직접 그려 봤어요.</p>
+      <ul class="list"><li>그림책 함께 읽으며 소리 흉내말 찾기</li><li>디지털 그리기 도구로 ‘나의 여름’ 표현</li></ul></div>
+    <div class="grid g2"><figure class="photo ar-1"><img src="img/g1-sun.jpg" alt="1학년 어린이가 그린 해님 그림" loading="lazy"></figure><figure class="photo ar-1"><img src="img/g1-melon.jpg" alt="1학년 어린이가 그린 수박 그림" loading="lazy"></figure></div>
+  </div></div></div>
+
+  <div class="panel" id="g2"><div class="box"><div class="split">
+    <div><h3 style="font-size:26px">2학년 · 『돌돌 말아 김밥』</h3>
+      <p>알록달록 김밥 재료들이 모여 맛있는 김밥이 되는 그림책을 읽고, 책 속 김밥을 교실놀이로 만났어요. 읽기 전에는 좋아하는 김밥 종류와 재료로 ‘인기투표’를 하며 책과 친해졌어요.</p>
+      <ul class="list"><li>읽기 전: 김밥 종류·재료 인기투표</li><li>읽은 후: 김밥 재료 ‘찢기 빙고’</li><li>교실놀이 ‘김밥 말이 놀이’ — 재료 역할을 정하고, 술래가 “김밥 말아!” 외치며 부른 재료 친구들끼리 이동</li></ul></div>
+    <div><figure class="photo ar-16-9"><img src="img/g2-photo.jpg" alt="2학년 어린이들이 교실에서 돌돌 말아 김밥 놀이를 하는 모습" loading="lazy"><figcaption>교실에서 즐기는 돌돌 말아 김밥 놀이</figcaption></figure>
+    <figure class="photo ar-16-9" style="margin-top:12px;max-width:360px"><img src="img/g2-cover.jpg" alt="『돌돌 말아 김밥』 그림책 장면" loading="lazy"></figure></div>
+  </div></div></div>
+
+  <div class="panel" id="g3"><div class="box"><div class="split">
+    <div><h3 style="font-size:26px">3학년 · 『한밤중 달빛식당』</h3>
+      <p>『한밤중 달빛식당』을 함께 읽고 활동했어요. 이야기를 나누고, 나만의 달빛식당 메뉴를 만들어 봅니다.</p>
+      <ul class="list"><li>책 속 이야기 나누기 + 활동지</li><li>나만의 달빛식당 메뉴 만들기</li></ul>
+      </div>
+    <div class="grid g2"><figure class="photo ar-4-3"><img src="img/g3-photo.jpg" alt="3학년 학생들이 달빛식당 메뉴를 만드는 활동 모습(얼굴 모자이크 처리)" loading="lazy" style="object-position:30% 50%"><figcaption>메뉴 만들기 활동</figcaption></figure><figure class="photo ar-4-3"><img src="img/g3-menu.jpg" alt="친구들이 만든 달빛식당 메뉴 — 고양이 모양 빵" loading="lazy"><figcaption>우리가 만든 달빛식당 메뉴</figcaption></figure></div>
+  </div></div></div>
+
+  <div class="panel" id="g4"><div class="box">
+    <h3 style="font-size:26px">4학년 · 바이브 코딩 수업 <span class="badge">대표 수업</span></h3>
+    <p style="margin-top:6px"><b>『도깨비폰을 개통하시겠습니까?』</b>를 읽고, 사람의 ‘기’를 살려 주는 앱을 AI(제미나이 캔버스)와 함께 만들었어요. 코딩을 몰라도 <b>말(프롬프트)</b>로 앱을 만드는 ‘바이브 코딩’입니다.</p>
+    <div class="steps">
+      <div class="step"><b>읽기 전</b>표지 보며 이야기 짐작, 스마트폰 경험 나누기</div>
+      <div class="step"><b>읽는 중</b>함께 읽으며 질문 나누고 내가 만들 앱 구상하기</div>
+      <div class="step"><b>읽은 후</b>‘기가 팍팍!’ 앱 만들기, 내 스마트폰 습관 돌아보기</div>
+    </div>
+    <div class="code">프롬프트는 이렇게 썼어요 → <b>역할</b> “너는 어린이를 위한 게임 개발자야.” · <b>할 일</b> “도깨비를 물리치는 게임을 만들어 줘.” · <b>조건</b> “휴대폰에서도 버튼으로 조작할 수 있게.”</div>
+    <div class="gallery" style="grid-template-columns:repeat(2,1fr)">
+      <figure class="photo" style="grid-column:1/-1;aspect-ratio:2/1"><img src="img/g4-photo1.jpg" alt="4학년 학생들이 도서관에서 각자 태블릿을 들어 보이는 모습(얼굴 모자이크 처리)" loading="lazy"><figcaption>내가 만든 앱을 패드에 띄워 함께 보여 줘요</figcaption></figure>
+      <figure class="photo ar-16-9"><img src="img/g4-photo2.jpg" alt="4학년 학생이 태블릿으로 앱을 만드는 모습" loading="lazy"></figure>
+      <figure class="photo ar-16-9"><img src="img/g4-flyer.jpg" alt="4학년 나만의 앱 전시관 안내 전단지" loading="lazy" style="object-position:top"></figure>
+    </div>
+    <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-top:18px;background:var(--leaf);border-radius:16px;padding:14px">
+      <img src="img/qr-grade4.png" alt="4학년 나만의 앱 전시관 QR 코드" width="110" height="110" style="border-radius:8px;background:#fff">
+      <div><b>📱 나만의 앱 전시관</b><br><span style="font-size:14px">친구들이 만든 앱을 직접 체험해 보세요. 집에서도 다시 접속할 수 있어요.</span><br>
+      <a class="btn" href="https://daeyn92-ctrl.github.io/bookfesta/" target="_blank" rel="noopener">앱 전시관 열기</a></div>
+    </div>
+  </div></div>
+
+  <div class="panel on" id="g5"><div class="box">
+    <h3 style="font-size:26px">5학년 · ‘왜왜왜 동아리’ 정보활용수업 <span class="badge">대표 수업</span></h3>
+    <p style="margin-top:6px">“불타는 숲의 미스터리, 진실을 밝혀라!” 학생들은 <b>왜왜왜 탐정단</b>이 되어 기후 위기의 원인을 추적합니다. 책과 AI 검색을 번갈아 쓰며 <b>정보의 진위를 교차 검증</b>해요.</p>
+    <div class="steps">
+      <div class="step"><b>도입 · 미션 받기</b>왜왜왜 탐정단이 되어 조사할 사건과 질문 정하기</div>
+      <div class="step"><b>4차시 · 탐색 전략</b>상황별로 NAVER·Google AI·책 검색 도구 고르기</div>
+      <div class="step"><b>5차시 · 비교·분석</b>어른의 시선(경제)과 아이들의 시선(생존권) 견주기</div>
+    </div>
+    <div class="steps" style="margin-top:10px">
+      <div class="step"><b>핵심 단어 검색</b>긴 문장 대신 ‘키워드’를 뽑아 검색하기</div>
+      <div class="step"><b>교차 검증</b>책 · 포털 · 생성형 AI의 답을 서로 비교하기</div>
+      <div class="step"><b>6차시 · 연설문 쓰기</b>제미나이에게 역할·할 일·조건으로 요청해 연설문 완성</div>
+    </div>
+    <div class="gallery" style="grid-template-columns:repeat(3,1fr)">
+      <figure class="photo ar-16-9"><img src="img/g5-mission.jpg" alt="5학년 수업 슬라이드: 불타는 숲의 미스터리" loading="lazy"></figure>
+      <figure class="photo ar-16-9"><img src="img/g5-search.jpg" alt="5학년 수업 슬라이드: 장비 1 네이버 핵심 단어 검색" loading="lazy"></figure>
+      <figure class="photo ar-16-9"><img src="img/g5-compare.jpg" alt="5학년 수업 슬라이드: 엇갈린 시선 경제 성장 대 생존할 권리" loading="lazy"></figure>
+      <figure class="photo ar-16-9"><img src="img/g5-speech.jpg" alt="5학년 수업 슬라이드: 제미나이 마법 주문 3단계" loading="lazy"></figure>
+      <figure class="photo ar-16-9"><img src="img/escape-q.jpg" alt="5학년 왜왜왜 동아리 온라인 방탈출 문제 화면" loading="lazy" style="object-fit:cover"><figcaption>왜왜왜 동아리 온라인 방탈출</figcaption></figure>
+      <figure class="photo ar-16-9"><img src="img/g5-photo3.jpg" alt="학교 주변을 정리하는 5학년 환경 실천 활동" loading="lazy"><figcaption>지구를 지키는 환경 실천 활동</figcaption></figure>
+    </div>
+  </div></div>
+
+  <div class="panel" id="g6"><div class="box"><div class="split">
+    <div><h3 style="font-size:26px">6학년 · 『돌 씹어 먹는 아이』</h3>
+      <p>가족 사이의 비밀과 마음을 다룬 책을 읽고, AI로 <b>‘가족 비밀 상담 앱’</b>을 만들었어요. 등장인물의 고민을 상담하는 앱을 기획하며 공감과 문제 해결력을 키웁니다.</p>
+      <ul class="list"><li>책 읽고 인물의 고민 정리하기</li><li>AI와 함께 ‘가족 상담사’ 앱 만들기</li><li>역할·할 일·조건으로 프롬프트 작성</li></ul></div>
+    <figure class="photo ar-16-9"><img src="img/g6-apps.jpg" alt="6학년 학생들이 만든 가족 상담사 앱 작품 모음" loading="lazy"><figcaption>우리가 만든 가족 상담사 앱 작품들</figcaption></figure>
+  </div></div></div>
+
+  <div class="split" style="margin-top:28px;align-items:center">
+    <div><h3 style="font-size:24px">🔐 온책읽기 온라인 방탈출</h3>
+      <p style="color:var(--mute)">학년별 읽기 도서를 퀴즈로 풀며 탈출하는 방탈출 게임! 도서관 이용법(1·2학년), 『겁보 만보』(3학년), 『재판정에 선 비둘기와 풀빵 할머니』(4학년), 왜왜왜 동아리(5학년), 『돌 씹어 먹는 아이』(6학년)로 읽기를 게임처럼 즐겨요.</p></div>
+    <figure class="photo ar-1" style="max-width:300px;justify-self:center"><img src="img/escape-q.jpg" alt="방탈출 게임 문제 화면" loading="lazy"></figure>
+  </div>
+</div></section>
+
+<!-- 3 성장 -->
+<section id="grow" class="alt2"><div class="wrap">
+  <div class="eyebrow">③ 성장 · 배움의 변화</div>
+  <h2 class="sec-title">책으로 하나 되는 이동</h2>
+  <p class="lead">아침, 점심, 방과 후까지 — 일상 곳곳에 책이 있어요. 학생·교사·학부모·선배가 함께 평생 독서 습관을 길러 갑니다.</p>
+  <div class="grid g2">
+    <div class="card event"><div class="ic">🌅</div><div><h3>책으로 여는 아침</h3><p>매일 아침독서 10분, 북모닝 &amp; 북플릭스로 추천도서를 전시해요.</p></div></div>
+    <div class="card event"><div class="ic">🏆</div><div><h3>북돋움 챌린지</h3><p>경기 북돋움 독서 챌린지! 도서관 곳곳에서 인증 사진을 남기며 읽는 학교를 만들어요.</p></div></div>
+    <div class="card event"><div class="ic">🤝</div><div><h3>사제동행 책 추천 릴레이</h3><p>선생님들이 학생에게 책을 추천하고 이어 가는 릴레이예요.</p></div></div>
+    <div class="card event"><div class="ic">👩‍👧</div><div><h3>북맘</h3><p>매주 목요일 아침, 학부모님이 책을 읽어 주는 ‘북맘’.</p></div></div>
+    <div class="card event"><div class="ic">📖</div><div><h3>책 읽어 주는 선배</h3><p>도서부 선배가 후배에게 책을 읽어 줍니다. 도서부 추천 플레이리스트(YouTube)도 운영해요.</p></div></div>
+    <div class="card event"><div class="ic">✍️</div><div><h3>이동초 한석봉을 찾습니다</h3><p>‘2026 마음챙김 손글씨 대회’(6/1~6/12). 인상 깊게 읽은 책 속 문장을 손글씨로 나눠요. 전 학년 참여!</p></div></div>
+  </div>
+  <div class="grid g3" style="margin-top:22px">
+    <figure class="photo" style="aspect-ratio:4/5"><img src="img/challenge1.jpg" alt="북돋움 챌린지 — 그네에 앉아 책 읽는 어린이들" loading="lazy"><figcaption>#경기북돋움 #북돋움챌린지</figcaption></figure>
+    <figure class="photo" style="aspect-ratio:4/5"><img src="img/challenge2.jpg" alt="북돋움 챌린지 — 도서관에서 책 읽는 어린이들" loading="lazy"><figcaption>#책읽는학교</figcaption></figure>
+    <figure class="photo" style="aspect-ratio:4/5"><img src="img/hansukbong1.jpg" alt="도서관에서 손글씨 대회를 준비하는 학생들(얼굴 모자이크 처리)" loading="lazy" style="object-position:40% 50%"><figcaption>손글씨 대회 준비</figcaption></figure>
+  </div>
+
+  <div class="grid g2" style="margin-top:22px">
+    <div class="card"><h3>✍️ 이동초 한석봉을 찾습니다 · 필사 추천도서</h3>
+      <p style="margin-bottom:10px">사서선생님의 학년별 추천도서를 빌려 읽고, 마음에 드는 문장을 골라 손글씨로 써 봤어요. 정성껏 쓴 손글씨는 교보 손글씨 대회에도 응모했어요.</p>
+      <div class="grid g2" style="gap:10px"><figure class="photo" style="aspect-ratio:3/4"><img src="img/hansukbong-poster.jpg" alt="이동초 한석봉을 찾습니다 손글씨 대회 포스터" loading="lazy" style="object-fit:contain;background:#fff"></figure>
+      <figure class="photo" style="aspect-ratio:3/4"><img src="img/recommend.jpg" alt="필사 추천도서 포스터" loading="lazy" style="object-fit:contain;background:#fff"></figure></div></div>
+    <div class="card"><h3>☕ 도서부 카페</h3><p style="margin-bottom:10px">매일 도서관에서 책 1권을 읽으면 아이스티 한 잔! 도서부 학생들이 직접 운영해요.</p>
+      <figure class="photo" style="aspect-ratio:2/3;max-height:420px;margin:0 auto;max-width:280px"><img src="img/bookclub-cafe.jpg" alt="도서부 카페 오픈 안내 포스터" loading="lazy" style="object-fit:contain;background:#fff"></figure></div>
+  </div>
+</div></section>
+
+<!-- 4 체험 -->
+<section id="booth"><div class="wrap">
+  <div class="eyebrow">④ 체험 · 배움의 나눔</div>
+  <div class="booth">
+    <h3>📌 나만의 책가도 책갈피 만들기</h3>
+    <p style="margin:0 0 16px">‘책가도’는 지식과 학문을 상징하는 그림 — 책과 함께 향로, 도자기, 붓 등을 그린 옛 그림을 말해요. 부스에서 반짝반짝 빛나는 자개 스티커로 <b>나만의 책가도 책갈피</b>를 만들어 보세요.</p>
+    <div class="grid g3">
+      <div class="card"><b>① 스티커 고르기</b><p>자개 스티커로 책·붓·도자기 등을 골라요</p></div>
+      <div class="card"><b>② 나만의 책가도</b><p>나만의 그림으로 책갈피를 꾸며요</p></div>
+      <div class="card"><b>③ 독서명언 포춘쿠키 🥠</b><p>꾸미기를 마치면 독서명언이 담긴 포춘쿠키를 받아요</p></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="share" class="alt"><div class="wrap" style="text-align:center">
+  <div class="eyebrow">SHARE</div>
+  <h2 class="sec-title">친구와 선생님께도 알려 주세요</h2>
+  <img src="img/qr-site.png" alt="이 사이트로 연결되는 QR 코드" width="220" height="220" style="margin:12px auto;border-radius:12px;background:#fff;padding:8px">
+  <div>
+    <button class="btn" id="shareBtn" style="border:0;font:inherit;font-weight:700;cursor:pointer">링크 공유하기</button>
+    <a class="btn ghost" href="img/qr-site.png" download="itda-books-qr.png">QR 이미지 저장</a>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <b>용인 이동초 잇다(IT-DA) 북스</b><br>
+  책으로 하나되는 이동(IT-DA): 디지털과 아날로그를 잇는 학교도서관<br>
+  <span style="font-size:13px;opacity:.8">2026 용인 RAS 성장 나눔 페스타 · 용인 이동초등학교</span>
+</div></footer>
+
+<div id="lb" role="dialog" aria-label="사진 확대" aria-modal="true"><img alt=""></div>
+
+<script>
+(function(){
+  var tabs=document.querySelectorAll('.tabs button'),panels=document.querySelectorAll('.panel');
+  function show(id){tabs.forEach(function(b){b.setAttribute('aria-selected',b.dataset.t===id)});panels.forEach(function(p){p.classList.toggle('on',p.id===id)})}
+  tabs.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.t)})});
+  var m=location.hash.match(/^#(g[1-6])$/); if(m){show(m[1]);document.getElementById('practice').scrollIntoView()}
+  var lb=document.getElementById('lb'),li=lb.querySelector('img');
+  document.addEventListener('click',function(e){var i=e.target.closest('.photo img');if(i){li.src=i.src;li.alt=i.alt;lb.classList.add('on')}else if(lb.classList.contains('on')){lb.classList.remove('on')}});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on')});
+  var sb=document.getElementById('shareBtn');
+  sb.addEventListener('click',function(){
+    var d={title:document.title,url:location.href.split('#')[0]};
+    if(navigator.share){navigator.share(d).catch(function(){})}
+    else if(navigator.clipboard){navigator.clipboard.writeText(d.url).then(function(){sb.textContent='링크가 복사되었어요!'}).catch(function(){})}
+  });
+})();
+</script>
+</body>
+</html>
